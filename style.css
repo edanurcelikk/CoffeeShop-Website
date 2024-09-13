@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+    body {
+      font-family: 'Poppins';
+      scroll-behavior: smooth;
+      transition: all 0.6s ease-in-out;
+      overflow-x: hidden;
+
+    }
+
+    .helloText {
+      border-radius: 20px;
+      padding-inline: 10px;
+      padding-left: 10px;
+      background-color: #000000;
+      opacity: 0.8;
+      filter: alpha(opacity=60);
+      font-size: 70px;
+      position: absolute;
+      top: 290px;
+      left: 380px;
+      color: white;
+
+    }
+
+    .inText {
+      background-color: black;
+      opacity: 0.8;
+      filter: alpha(opacity=60);
+      position: absolute;
+      top: 450px;
+      left: 160px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+
+    }
+
+    .navbar {
+      border: 2px;
+      background-color: black;
+      height: 120px;
+      margin: -8px;
+      margin-top: -8px;
+      /* fixed navbar*/
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    .coffeeIcon {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      top: 10px;
+      left: 270px;
+      border-radius: 100px;
+
+    }
+
+    .navbar ul li {
+      list-style-type: none;
+      float: left;
+      padding: 0 30px;
+      color: azure;
+      position: relative;
+      top: -75px;
+      left: 470px;
+      font-size: 20px;
+
+    }
+
+    .coffeeShop {
+      margin-left: -8px;
+      width: 1519px;
+      height: 700px;
+      background-image: url(images/coffeeshop.avif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: inherit;
+
+    }
+
+    .aboutUsBox {
+      background-image: url(images/brownBackground.PNG);
+      background-size: cover;
+      background-position-y: -10px;
+      background-repeat: no-repeat;
+      width: 1519px;
+      height: 800px;
+      margin-top: -25px;
+      margin-left: -8px;
+      margin-right: inherit;
+      z-index: 1;
+    }
+
+    @font-face {
+      font-family: Moontime;
+      src: url(../MoonTime\ Regular\ 400.otf);
+    }
+
+    .aboutUs {
+      font-family: Moontime;
+      color: rgb(226, 226, 204);
+      font-size: 40px;
+      position: relative;
+      top: 268px;
+      left: 500px;
+    }
+
+    .aboutUsText {
+      color: beige;
+      font-size: 20px;
+      text-align: center;
+      position: relative;
+      top: 255px;
+      right: 170px;
+
+    }
+
+    .aboutUsPic {
+      width: 480px;
+      height: 480px;
+      position: absolute;
+      right: 50px;
+      padding-right: 50px;
+      margin-top: -100px;
+      padding-bottom: 50px;
+
+    }
+
+    .menuBox {
+      background-color: rgba(238, 238, 236, 255);
+      width: 1519px;
+      height: 730px;
+      margin-top: -33px;
+      margin-left: -8px;
+      margin-right: inherit;
+      margin-top: 0;
+      z-index: 1;
+
+    }
+
+    .menu {
+      font-family: 'Moontime';
+      position: absolute;
+      margin-top: 140px;
+      margin-left: 170px;
+
+    }
+
+    .americano {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 150px;
+    }
+
+    .americanoText {
+      position: absolute;
+      margin-top: 220px;
+      margin-left: 270px;
+
+    }
+
+    .americanoText2 {
+      position: absolute;
+      margin-top: 250px;
+      margin-left: 270px;
+    }
+
+    .cappuccino {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 330px;
+      margin-left: 150px;
+    }
+
+    .cappuccinoText {
+      position: absolute;
+      margin-top: 350px;
+      margin-left: 270px;
+
+    }
+
+    .cappuccinoText2 {
+      position: absolute;
+      margin-top: 380px;
+      margin-left: 270px;
+    }
+
+    .espresso {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 460px;
+      margin-left: 150px;
+    }
+
+    .espressoText {
+      position: absolute;
+      margin-top: 480px;
+      margin-left: 270px;
+
+    }
+
+    .espressoText2 {
+      position: absolute;
+      margin-top: 510px;
+      margin-left: 270px;
+    }
+
+    .flatwhite {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 590px;
+      margin-left: 150px;
+    }
+
+    .flatwhiteText {
+      position: absolute;
+      margin-top: 610px;
+      margin-left: 270px;
+
+    }
+
+    .flatwhiteText2 {
+      position: absolute;
+      margin-top: 640px;
+      margin-left: 270px;
+    }
+
+    .latte {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 200px;
+      right: 490px;
+    }
+
+    .latteText {
+
+      position: absolute;
+      margin-top: 220px;
+      right: 322px;
+
+    }
+
+    .latteText2 {
+      position: absolute;
+      margin-top: 250px;
+      right: 30px;
+    }
+
+    .macchiato {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 330px;
+      right: 490px;
+    }
+
+    .macchiatoText {
+      position: absolute;
+      margin-top: 350px;
+      right: 260px;
+
+    }
+
+    .macchiatoText2 {
+      position: absolute;
+      margin-top: 380px;
+      right: 85px;
+    }
+
+    .mocha {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 460px;
+      right: 490px;
+    }
+
+    .mochaText {
+
+      position: absolute;
+      margin-top: 350px;
+      right: 260px;
+      position: absolute;
+      margin-top: 480px;
+      right: 303px;
+
+    }
+
+    .mochaText2 {
+      position: absolute;
+      margin-top: 510px;
+      right: 115px;
+    }
+
+    .turkishCoffee {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      position: absolute;
+      margin-top: 590px;
+      right: 490px;
+
+    }
+
+    .turkishCoffeeText {
+      position: absolute;
+      margin-top: 610px;
+      right: 220px;
+
+    }
+
+    .turkishCoffeeText2 {
+      position: absolute;
+      margin-top: 640px;
+      right: 77px;
+    }
+
+    .firstBox {
+      width: 900px;
+      position: absolute;
+      left: 40px;
+    }
+
+    .secondBox {
+      width: 900px;
+      position: absolute;
+      right: 90px;
+    }
+
+    .galleryBox {
+      background-color: rgba(238, 238, 236, 255);
+      width: 1519px;
+      height: 730px;
+      margin-top: -33px;
+      margin-left: -8px;
+      margin-right: inherit;
+      z-index: 1;
+
+    }
+
+    .firstPic {
+      width: 300px;
+      height: 290px;
+      margin-left: 150px;
+      margin-top: 130px;
+
+    }
+
+    .secondPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      margin-left: 150px;
+      margin-top: 0px;
+    }
+
+    .thirdPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      margin-left: 458px;
+      margin-bottom: -100px;
+
+    }
+
+    .fourthPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      margin-left: 458px;
+      margin-top: -296px;
+
+    }
+
+    .fifthPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      right: 453px;
+      margin-top: -296px;
+    }
+
+    .sixthPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      right: 453px;
+      margin-bottom: -100px;
+
+    }
+
+    .seventhPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      right: 145px;
+      margin-top: -296px;
+
+    }
+
+    .eighthPic {
+      width: 300px;
+      height: 290px;
+      position: absolute;
+      right: 145px;
+      margin-bottom: -100px;
+
+    }
+
+    .galleryArticle {
+      font-family: 'Moontime';
+      font-size: 80px;
+      color: white;
+      background-color: #000000;
+      border-radius: 100px;
+      padding-inline: 30px;
+      opacity: 0.8;
+      filter: alpha(opacity=60);
+      position: absolute;
+      margin-top: 370px;
+      left: 610px;
+      z-index: 1;
+
+    }
+
+    .contactBox {
+      background-color: rgba(238, 238, 236, 255);
+      width: 1519px;
+      height: 730px;
+      margin-top: -33px;
+      margin-left: -8px;
+      margin-right: inherit;
+      z-index: 1;
+    }
+
+    .contactText {
+      font-family: 'Moontime';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: aliceblue;
+    }
+
+    .table {
+      font-size: 20px;
+      margin-left: 120px;
+    }
+
+    .inputbox {
+      width: 460px;
+      height: 590px;
+      background-color: #000000;
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      padding: 2px 0px 2px 0px;
+      position: relative;
+      left: 130px;
+      top: 130px;
+    }
+
+    .nameInput,
+    .subjectInput,
+    .emailInput,
+    .messageInput {
+      width: 310px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom-color: #000000;
+      background-color: #000000;
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      outline: none;
+      font-size: 16px;
+      color: aliceblue;
+
+    }
+
+    .nameText {
+      position: relative;
+      top: -55px;
+      margin-left: -50px;
+      color: aliceblue;
+    }
+
+    .nameInput {
+      position: relative;
+      top: -45px;
+      margin-left: -50px;
+    }
+
+    .subjectText {
+      position: relative;
+      top: -25px;
+      margin-left: -50px;
+      color: aliceblue;
+    }
+
+    .subjectInput {
+      position: relative;
+      margin-left: -50px;
+      top: -15px;
+    }
+
+    .emailText {
+      position: relative;
+      top: 10px;
+      margin-left: -50px;
+      color: aliceblue;
+    }
+
+    .emailInput {
+      position: relative;
+      top: 20px;
+      margin-left: -50px;
+    }
+
+    .messageText {
+      position: relative;
+      top: 40px;
+      margin-left: -50px;
+      color: aliceblue;
+
+    }
+
+    .messageInput {
+      position: relative;
+      top: 60px;
+      margin-left: -50px;
+      border-bottom-color: #7e7e7ed9;
+
+    }
+
+    .btn {
+      width: 80px;
+      height: 40px;
+      border-radius: 20px;
+      position: relative;
+      left: 310px;
+      top: 460px;
+
+    }
+
+    .openningText {
+      position: absolute;
+      margin-top: -380px;
+      left: 650px;
+
+    }
+
+    .contactFirstBox {
+      position: absolute;
+      margin-top: -350px;
+      left: 660px;
+
+    }
+
+    .contactSecondBox {
+      position: absolute;
+      margin-top: -350px;
+      left: 1300px;
+    }
+
+    .address {
+      position: absolute;
+      margin-top: -150px;
+      left: 650px;
+    }
+
+    .location {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      margin-top: -105px;
+      left: 650px;
+    }
+
+    .addressText {
+      position: absolute;
+      margin-top: -110px;
+      left: 700px;
+
+    }
+
+    .phone {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      margin-top: -110px;
+      right: 400px;
+
+    }
+
+    .customer {
+      position: absolute;
+      margin-top: -150px;
+      right: 200px;
+
+    }
+
+    .customerText {
+      position: absolute;
+      margin-top: -105px;
+      right: 280px;
+
+    }
+
+    .socialMedia {
+      position: absolute;
+      margin-top: -40px;
+      left: 650px;
+    }
+
+    .facebook {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin-top: -2px;
+      left: 680px;
+    }
+
+    .instagram {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      margin-top: -17px;
+      left: 720px;
+    }
+
+    .socialMediaBox {
+      width: 1000px;
+      position: absolute;
+      margin-left: 250px;
+    }
