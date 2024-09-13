@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="home">
+
+  <div class="navbar">
+    <div class="icon"><img class="coffeeIcon" src="images/icon.avif"></div>
+
+    <ul>
+      <a href="#home">
+        <li>Home</li>
+      </a>
+      <a href="#aboutUs">
+        <li>About Us</li>
+      </a>
+      <a href="#menu">
+        <li>Menu</li>
+      </a>
+      <a href="#gallery">
+        <li>Gallery</li>
+      </a>
+      <a href="#contact">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </div> <!--navbar end-->
+  <div>
+    <h1 class="helloText">HELLO, WELCOME!</h1>
+  </div>
+  <div>
+    <h3 class="inText">In this cozy corner in the heart of the city,
+      we are here to offer you a unique experience. Enjoy the taste of
+      our freshly<br> brewed coffees, homemade pastries, and relaxing
+      atmosphere. Whether you're looking for an energetic start to<br> your
+      day or a pleasant place to catch up with friends, this is the best
+      spot for it.
+
+    </h3>
+  </div>
+
+  <div class="coffeeShop"></div>
+
+  <div class="aboutUsBox" id="aboutUs">
+    <h1 class="aboutUs">ABOUT US</h1>
+    <h3 class="aboutUsText">We are a team passionately dedicated to the art and <br>
+      culture of coffee. Our goal is not just to serve you <br>
+      high-quality coffee but to create a warm and inviting<br>
+      atmosphere as well. In every cup, you'll find the essence<br>
+      of carefully selected beans and expertly crafted brewing<br>
+      techniques. We're thrilled to be a part of your coffee journey. </h3>
+
+    <div><img class="aboutUsPic" src="images/coffee.png"> </div>
+  </div>
+
+  <div class="menuBox" id="menu">
+    <h1 class="menu">OUR MENU</h1>
+    <div class="firstBox">
+      <div><img class="americano" src="images/coffee/americano.webp"></div>
+      <h3 class="americanoText">AMERICANO.............9$</h3>
+      <p class="americanoText2">Espresso shots topped with hot water</p>
+
+      <div><img class="cappuccino" src="images/coffee/cappuccino.webp"></div>
+      <h3 class="cappuccinoText">CAPPUCCINO.............9$</h3>
+      <p class="cappuccinoText2">Dark espresso lies in wait under milk foam</p>
+
+      <div><img class="espresso" src="images/coffee/espresso.webp"></div>
+      <h3 class="espressoText">ESPRESSO.............5$</h3>
+      <p class="espressoText2">Signature Espresso Roast with rich flavor</p>
+
+      <div><img class="flatwhite" src="images/coffee/flatwhite.jpg"></div>
+      <h3 class="flatwhiteText">FLAT WHITE.............9$</h3>
+      <p class="flatwhiteText2">Fresh brewed coffee and steamed milk</p>
+    </div>
+    <div class="secondBox">
+      <div><img class="latte" src="images/coffee/latte.webp"></div>
+      <h3 class="latteText">LATTE.............6$</h3>
+      <p class="latteText2">Signature espresso are intentionally combined over ice</p>
+
+      <div><img class="macchiato" src="images/coffee/macchiato.jpg"></div>
+      <h3 class="macchiatoText">MACCHIATO.............9$</h3>
+      <p class="macchiatoText2">Freshly steamed milk with vanilla-flavored syrup</p>
+
+      <div><img class="mocha" src="images/coffee/mocha.png"></div>
+      <h3 class="mochaText">MOCHA.............7$</h3>
+      <p class="mochaText2">Full-bodied espresso combined with mocha</p>
+
+      <div><img class="turkishCoffee" src="images/coffee/turkishcoffee.webp"></div>
+      <h3 class="turkishCoffeeText">TURKISH COFFEE.............6$</h3>
+      <p class="turkishCoffeeText2">Finely ground coffee beans are boiled with water</p>
+    </div>
+
+  </div>
+  <div class="galleryBox" id="gallery">
+    <h2 class="galleryArticle">GALLERY</h2>
+    <div><img class="firstPic" src="images/gallery/coffeeShopInterior.avif"></div>
+    <div><img class="secondPic" src="images/gallery/coffee.jpg"></div>
+    <div><img class="thirdPic" src="images/gallery/barista.jpg"></div>
+    <div><img class="fourthPic" src="images/gallery/cafe.jpg"></div>
+    <div><img class="fifthPic" src="images/gallery/warmthCafe.avif"></div>
+    <div><img class="sixthPic" src="images/gallery/coffeeWoodenTable.jpg"></div>
+    <div><img class="seventhPic" src="images/gallery/coffeeCupwithPlants.jpg"></div>
+    <div><img class="eighthPic" src="images/gallery/coffeePreparation.jpg"></div>
+  </div>
+
+  <div class="contactBox" id="contact">
+    <div class="inputbox">
+      <h1 class="contactText">CONTACT</h1>
+      <table class="table">
+        <tr>
+          <td><label for=user class="nameText">Name:</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="nameInput"></td>
+        </tr>
+        <tr>
+          <td><label for=user class="subjectText">Subject:</label> </td>
+        </tr>
+        <tr>
+          <td><input type="text" class="subjectInput"> </td>
+        </tr>
+        <tr>
+          <td><label for=user class="emailText">Email: </label>
+        </tr>
+        <tr>
+          </td>
+          <td> <input type="email" class="emailInput"></td>
+        </tr>
+        <tr>
+          <td><label for=user class="messageText"> Message: </label></td>
+        </tr>
+        <tr>
+          <td> <textarea class="messageInput" rows="5" cols="40"></textarea></td>
+        </tr>
+        <input class="btn" type="submit" value="SEND">
+      </table>
+
+    </div>
+    <div>
+      <h2 class="openningText">OPENNING HOURS</h2>
+
+      <div class="contactFirstBox">
+        <p>Working Days</p>
+        <hr style="width: 750px;">
+        <p>Saturday</p>
+        <hr style="width: 750px;">
+        <p>Sunday</p>
+        <hr style="width: 750px;">
+      </div>
+      <div class="contactSecondBox">
+        <p>10AM - 7PM</p>
+        <hr>
+        <p>10AM - 6PM</p>
+        <hr>
+        <p>11AM - 5PM</p>
+        <hr>
+      </div>
+      <h2 class="address">ADDRESS</h2>
+      <p class="addressText">Our Address 467 Davidson ave, <br>
+        Los Angeles CA 95716</p>
+      <div><img class="location" src="images/location_535239.png"></div>
+
+      <h2 class="customer">CUSTOMER SUPPORT</h2>
+      <p class="customerText">888.373.2374 <br> </p>
+      <div><img class="phone" src="images/telephone-call_3059561.png"></div>
+
+      <div class="socialMediaBox">
+        <h2 class="socialMedia">SOCIAL MEDIA</h2>
+        <a href="https://www.facebook.com/">
+          <div><img class="facebook" src="images/facebook.png"></div>
+        </a>
+        <a href="https://www.instagram.com/">
+          <div><img class="instagram" src="images/instagram-logo.webp"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
